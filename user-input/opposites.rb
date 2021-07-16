@@ -12,18 +12,26 @@ def validate_number?(number_string)
   number_string.to_i.to_s == number_string && number_string.to_i != 0
 end
 
-def number_getter(number)
-
+def number_getter
+  loop do
+    print "Please enter a positive or negative integer: "
+    number = gets.chomp
+    if !validate_number?(number)
+      puts "Invalid input. Only non-zero integers are allowed."
+      next
+    end
+    return number
+  end
+end
 
 number1 = nil
 number2 = nil
 
 loop do
-  print "Please enter a positive or negative integer: "
-  number1 = gets.chomp
-  if !validate_number?(number1)
+  number1 = number_getter
+  number2 = number_getter
+  break if number1.to_i / number2.to_i < 0
+  puts "Sorry. One integer must be positive, one must be negative.\nPlease start over."
+end
 
-
-  print "Please enter a positive or negative integer: "
-  number2 = gets.chomp
-    
+puts "#{number1} + #{number2} = #{number1.to_i + number2.to_i}"
