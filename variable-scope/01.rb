@@ -9,4 +9,5 @@ end
 my_value(a)
 puts a
 
-# WRONG, try again tomorrow :)
+# This will print 7. Incrementing with += actually reassigns the variable a new
+# integer, as the previous integer cannot be modified.

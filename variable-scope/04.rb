@@ -9,4 +9,6 @@ end
 my_value(a)
 puts a
 
-# correct 7/15/21
+# This will print Xy-zy. In this case my_value can influence the variable
+# from the main function because while the array that a is pointing to is being
+# modified, a is still pointing to the same array.

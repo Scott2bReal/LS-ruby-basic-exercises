@@ -9,4 +9,5 @@ end
 my_value(a)
 puts a
 
-# correct 7/15/21
+# This will throw an error because a has not been declared inside of the body of
+# my_value.

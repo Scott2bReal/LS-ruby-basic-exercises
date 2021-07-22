@@ -12,4 +12,5 @@ end
 my_value(array)
 puts a
 
-# correct 7/15/21
+# This will throw an error because a is not initialzed inside of my_value before
+# the function attempts to iterate it.

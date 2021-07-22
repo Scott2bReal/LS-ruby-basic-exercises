@@ -9,4 +9,5 @@ end
 
 puts a
 
-# correct 7/15/21
+# This will put 7 because the a inside the each block is shadowing the a from
+# the main function.

@@ -8,3 +8,6 @@ end
 
 my_value(a)
 puts a
+
+# This is the same as the last problem, except that the variable in the function
+# has the same name as the variable declared in the main function

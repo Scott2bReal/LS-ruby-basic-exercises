@@ -8,4 +8,5 @@ end
 
 puts a
 
-# correct 7/15/21
+# This will throw an error because a isn't defined before it's appearance in the
+# .each block

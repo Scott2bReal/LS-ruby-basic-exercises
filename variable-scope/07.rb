@@ -9,4 +9,6 @@ end
 
 puts a
 
-# wrong 7/15/21
+# Because this is not a method, it can reassign variables declared within the
+# scope of the main function. In this case, a is reassigned to each element of
+# the array, ending with 3. Therefore, the program will print 3

@@ -9,4 +9,6 @@ end
 my_value(a)
 puts a
 
-# wrong 7/15/21
+# In this case, b is being reassigned to a new string, so the program will print
+# "Xyzzy". This is similar the first problem where reassignment does not modify
+# the original variable's value
